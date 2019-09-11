@@ -1,15 +1,14 @@
 var waitingapp = new Vue({
   el: '#patientwaitingapp',
 data: {
-
-patients: []
+  patients: []
 },
 
 methods: {
   fetchPatients() {
             fetch('dummy.php')
-            .then( response => response.json() )
-            .then ( json => {waitingapp.patients = json});
+            // .then( response => response.json() )
+            .then ( response => {waitingapp.patients = response.json()});
           }
         },
 created() {
