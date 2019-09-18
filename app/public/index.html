@@ -67,9 +67,89 @@
       </div>
     </div>
   </div>
+<<<<<<< Updated upstream
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/waiting.app.js"></script>
   <script src="js/record.app.js"></script>
+=======
+
+  <div id="patientRecordApp">
+    <form>
+
+    <label for="text">First Name:</label>
+    <input type="text" placeholder="Enter First Name">
+    <br>
+
+    <label for="text">Last Name:</label>
+    <input type="text" placeholder="Enter Last Name">
+    <br>
+
+    <label for="text">Sex At Birth:</label>
+    <input type="text" placeholder="Enter Sex At Birth">
+    <br>
+
+    <label for="text">Date of Birth:</label>
+    <input type="text" placeholder="Enter Date of Birth">
+    <br>
+
+    <label for="text">Priority: </label>
+    <input type="text" placeholder="Enter Priority">
+    <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <table>
+
+      <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Sex At Birth</th>
+      <th scope="col">DOB</th>
+      <th scope="col">Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for: "p in patients">
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>M</td>
+      <td>9/19/1992</td>
+      <td>High</td>
+
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>M</td>
+      <td>9/19/1992</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>M</td>
+      <td>9/19/1992</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+
+    </table>
+
+  </div>
+
+<div id="patientTriageApp">
+
+</div>
+
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+      <script src="js/waiting.app.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 </html>
