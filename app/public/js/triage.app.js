@@ -9,8 +9,8 @@ var patientTriageApp = new Vue({
 
        TODO:
        fetch('api/waiting/post.php', {
-        method:'post',
-        body: JSON.stringify(this.patient)
+        method:'POST',
+        body: JSON.stringify(this.patient),
         headers: {
           "Content-Type": "application/json; charset=utf-8"
         }
