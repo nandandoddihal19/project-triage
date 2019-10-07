@@ -6,8 +6,14 @@ $db = DbConnection::getConnection();//getConnection belongs to singleton class.
 //PDO: Persistent Data object
 
 // Step 2: Create & run the query
+if(isset($_GET['guid'])){
+  $stmt = $db->prepare('SELECT * FROM Patient where patientGuid = ?');
+$stmt->execute([$_GET['guid']]); //execute method of PDO object
+}
+else {
 $stmt = $db->prepare('SELECT * FROM Patient');
 $stmt->execute(); //execute method of PDO object
+}
 $patients = $stmt->fetchAll();
 
 // patientGuid VARCHAR(64) PRIMARY KEY,
